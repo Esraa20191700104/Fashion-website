@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+           
+            <title>Skirt details</title>
+            <link rel="stylesheet" type="test/css" href="style.css">
+            <style>
+                .btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius:30px;
+}
+table{
+    border:1px solid #f5e9e2;
+    padding: 50px;
+}
+.single-product input{
+    width:50px;
+    height: 40px;
+    padding-left:10px;
+    font-size:20px;
+    margin-right: 10px;
+    border:1px solid #ff523b;
+}
+input:focus{
+    outline none;
+}
+.single-product select{
+    display:block;
+    padding:10px;
+    margin-top:20px;
+}
+.single-product h4{
+    margin:15px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product h1{
+      font-size:26px;
+    line-height: 32px;
+}
+            </style>
+        </head>
+        <body bgcolor="#f5e9e2" >
+             <div class="small-container   single-product">
+			 <table align="center">
+                 <tr>
+                    <td>
+                        <img src= "sksksk.png"alt="desert image" id="ProductImg4" width="300" />
+                    </td>
+                    <td>
+                        <h1>Purple Skirt</h1>
+                          <h4>$300.00</h4>
+                          <select>
+                    <option>select size</option>
+                    <option>XL</option>
+                     <option>Large</option>
+                      <option>medium</option>
+                       <option>small</option>
+                </select>
+                          <br>
+                <input type="number" value="1">
+                <a href="pay.html" class="btn">Buy Now</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                         <img src="sksksk.png" class="small-img4" width="150" height="200">
+                         <img src="bbbb.png" class="small-img4" width="150" height="200">
+                    </td>
+                </tr>
+             </table>
+              <script>
+                var ProductImg4=document.getElementById("ProductImg4");
+                var smallimg4=document.getElementsByClassName("small-img4");
+                smallimg4[0].onclick=function()
+                {
+                    ProductImg4.src=smallimg4[0].src;
+                }
+                 smallimg4[1].onclick=function()
+                {
+                    ProductImg4.src=smallimg4[1].src;
+                }
+             </script>
+			 </div>
+        </body>
+    </html>

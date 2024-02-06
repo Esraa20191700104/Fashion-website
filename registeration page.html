@@ -1,0 +1,44 @@
+<html>
+<head>
+<title> Registeration page</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+<style >
+.login_page{
+padding: 50px 0;
+background: radial-gradient(#fff , #ffd6d6);
+}
+.form-container{
+background: #fff;
+width:300px;
+height: 400px;
+position: relative;
+text-align: center;
+padding: 20px 0;
+margin: auto;
+box-shadow: 0 0 20px 0px rgba(0,0,0,01);
+}
+
+
+</style>
+
+</head>
+
+<body>	
+<div class="login_page">
+    <div class="container">
+	<div class="form-container">
+          <span><strong>Register</strong></span><br/>
+			
+			<form name="reg" >
+			   <input type="text" required placeholder="Username"><br>
+			   <input pattern="/^[a-zA-Z0-9.!#$%&'+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)$/" required id="email" placeholder="Email"><br>
+			   <input type="password"  required placeholder="Password"><br/>
+			   <a href ="website.html" > <input type ="button" value = "Register"/></a>
+			  
+			</form>
+	</div>
+    </div>
+</div>			
+</body>
+</html>

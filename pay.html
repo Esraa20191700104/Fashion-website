@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<head>
+    <meta charset="utf-8">
+	<title>Payment and receipt</title>
+    <style>
+        *
+        {
+            letter-spacing:3px;
+	       font-family:sans-serif;
+        }
+
+        
+        body
+        {
+            margin: 0;
+            padding: 0;
+            background: #f5e9e2;
+
+           
+        }
+        .main
+        {
+		position :absolute;
+            top:5%;
+            left: 30%;
+            right: 20%;
+            width: 600px;
+            background: #fff;
+            padding: 40px;
+            box-sizing: border-box;
+            border: 1px solid rgba(0,0,0,.1);
+            border-radius: 15px;
+        }
+        .main h3
+        {
+            margin: 0 0 40px;
+            padding: 0;
+            color: #ff523b;
+            font-size: 150%
+        }
+        .main input
+        {
+            padding: 10px 0;
+            margin-bottom: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            box-shadow: none;
+            outline: none;
+            border: none;
+            border-bottom: 2px solid #ff523b;
+
+            
+        }
+       #Confirm,#Reset,#other
+        {
+            border-bottom: none;
+            cursor: pointer;
+            background: #ff523b;
+            margin-bottom: 0;
+            width: 45%;
+            border-radius:12px;
+        }
+         #buttons
+        {
+         display:inline;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+          <h3 align="center">Payment and receipt</h3> 
+    <form>
+
+        
+
+    
+            <input type="text"  name=""  required=""  placeholder="User Name">
+            <input type="number"  name=""  required=""  placeholder="Cart Number"  >
+            <input type="number"  name=""  required=""  placeholder="Expries" >
+            <input type="text"  name=""  required=""  placeholder="Adress Line">
+            <input type="text" name=""  required=""  placeholder="Towen/City" >
+            <input type="text"  name=""  required=""  placeholder="Country">
+
+             
+            <input type="text"  name=""  required=""  placeholder="Post Code">
+            <input type="number"  name=""  required=""  placeholder="Mobile">
+
+            
+
+        
+        <div id="buttons" >
+
+           
+       <input id="Reset" type="reset" name="" value="Reset">
+       <input id="Confirm" type="submit" name="" value="Confirm">
+	   <p>OR YOU WANT TO PAY IN An other way</p>
+   <a href ="paypal.html"> <input id="other" type ="button" value ="other way"></a>
+        </div>
+     </form>
+    </div>
+</html>
